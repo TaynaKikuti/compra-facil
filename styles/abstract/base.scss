@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&family=Libre+Franklin:wght@300;400&display=swap');
+
+//fontes
+$fonte-logo: 'IBM Plex Sans', sans-serif; //300,500, 700
+$fonte-texto: 'Libre Franklin', sans-serif; //300,400
+
+//cores
+$cor-principal: #0766AD;
+$cor-secundaria: #29ADB2;
+$cor-terciaria: #C5E898;
+$cor-de-fundo: #F3F3F3;
+
+
+html, body {
+    background-color: $cor-de-fundo;
+    font-family: $fonte-texto;
+    font-size: 1.2rem;
+}

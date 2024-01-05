@@ -1,0 +1,35 @@
+@import '../abstract/base.scss';
+
+
+.container {
+    background-color: $cor-secundaria;
+    height: 100vh;
+}
+
+.container__titulo {
+    padding: 40px 50px 0 50px;
+    font-family: $fonte-logo;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    
+    strong {
+        color: $cor-terciaria;
+    }
+}
+
+.inserir__produtos {
+    
+    input{
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
+
+    button {
+        display: block;
+        margin: auto;
+        width: 100px;
+    }
+}

@@ -1,0 +1,27 @@
+@import '../abstract/base.scss';
+
+.cabecalho {
+    background-color: $cor-principal;
+    padding:15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 45px;
+    color: white;
+}
+
+.cabecalho__titulo {
+    padding: 12px 0 10px 0;
+    font-family: $fonte-logo;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    strong {
+        color: $cor-terciaria;
+    }
+}
+
+.cabecalho__subtitulo {
+    font-weight: 400;
+    font-size: 0.95rem;
+}
