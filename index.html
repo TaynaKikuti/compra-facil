@@ -18,23 +18,24 @@
     </header>
 
     <main class="container">
-        <h2 class="container__titulo">Todos os itens que você precisa comprar na palma da sua mão em qualquer lugar do mundo, <strong>evite esquecimentos</strong>.</h2>
-        <div class="inserir__produtos">
+        <h2 class="container__titulo">Todos os itens que você precisa comprar na palma da sua mão e em qualquer lugar do mundo, <strong>evite esquecimentos</strong>.</h2>
+        <form class="inserir__produtos">
             <input type="text" name="Produtos" id="inserir__produtos__input" required minlength="2" placeholder="Insira aqui o item que deseja adicionar">
-            <button type="submit">Adicionar</button>
-        </div>
+            <span class="mensagem__erro"></span>
+            <button type="submit" class="btnAdicionar">Adicionar</button>
+        </form>
         
         <section class="lista__compras">
-            <h2 class="lista__compras__titulo">Produtos</h2>
-            <h3 class="lista__compras__subtitulo">Quantidade</h3>
+            <h2 class="lista__compras__titulo">Lista de compras</h2><hr>
             <ul class="lista__de__compras">
-                <li></li>
             </ul>
         </section>
 
 
         <section class="comprados">
-
+            <h2 class="comprados__titulo">Comprados</h2><hr>
+            <ul class="comprados__lista">
+            </ul>
         </section>
 
 
@@ -45,5 +46,6 @@
     <footer>
 
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

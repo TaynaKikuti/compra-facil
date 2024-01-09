@@ -7,7 +7,7 @@
 }
 
 .container__titulo {
-    padding: 40px 50px 0 50px;
+    padding: 40px 50px 15px 50px;
     font-family: $fonte-logo;
     font-size: 1.3rem;
     font-weight: 700;
@@ -25,11 +25,92 @@
         width: 250px;
         display: block;
         margin: auto;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border: 2px solid $cor-terciaria;
+        border-radius: 10px;
+        outline: none;
+        background-color: $cor-de-fundo;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.312);
+        &::placeholder {
+            font-family: $fonte-texto;
+            text-align: center;
+        }
+        &:focus {
+            border-color: $cor-principal;
+            
+        }
     }
+    
 
     button {
         display: block;
         margin: auto;
         width: 100px;
+        background-color: $cor-principal;
+        padding: 10px;
+        font-family: $fonte-texto;
+        text-transform: uppercase;
+        color: white;
+        border: 3px solid $cor-principal;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.312);
+        cursor: pointer;
+        &:hover {
+            background-color: $cor-terciaria;
+            border-color: $cor-terciaria;
+            color: black;
+            font-weight: bold;
+        }
     }
 }
+
+
+.comprados,
+.lista__compras {
+    background-color: $cor-de-fundo;
+    text-align: center;
+    max-height: 30%;
+    margin: 3% 15%;
+    padding-bottom: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.273);
+    border-radius: 20px;
+    h2 {
+        padding: 10px 0;
+        
+    }
+    hr{
+        margin: 0 30px;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7px 30px;
+        #icone__lixo{
+            cursor:pointer;
+        }
+    }
+}
+
+.lista__item {
+    display: flex;
+    align-items: center;
+}
+.checkbox__produto {
+    display: none;
+}
+
+.lista__item__img {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    cursor: pointer;
+}
+.mensagem__erro {
+    display: block;
+    margin: 3px 10px 10px 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color:red;
+ }

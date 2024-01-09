@@ -11,7 +11,7 @@ html, body {
 }
 
 .container__titulo {
-  padding: 40px 50px 0 50px;
+  padding: 40px 50px 15px 50px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -26,9 +26,97 @@ html, body {
   width: 250px;
   display: block;
   margin: auto;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 2px solid #C5E898;
+  border-radius: 10px;
+  outline: none;
+  background-color: #F3F3F3;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.312);
+}
+.inserir__produtos input::-moz-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.inserir__produtos input::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.inserir__produtos input:focus {
+  border-color: #0766AD;
 }
 .inserir__produtos button {
   display: block;
   margin: auto;
   width: 100px;
+  background-color: #0766AD;
+  padding: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid #0766AD;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.312);
+  cursor: pointer;
+}
+.inserir__produtos button:hover {
+  background-color: #C5E898;
+  border-color: #C5E898;
+  color: black;
+  font-weight: bold;
+}
+
+.comprados,
+.lista__compras {
+  background-color: #F3F3F3;
+  text-align: center;
+  max-height: 30%;
+  margin: 3% 15%;
+  padding-bottom: 20px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.273);
+  border-radius: 20px;
+}
+.comprados h2,
+.lista__compras h2 {
+  padding: 10px 0;
+}
+.comprados hr,
+.lista__compras hr {
+  margin: 0 30px;
+}
+.comprados li,
+.lista__compras li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 30px;
+}
+.comprados li #icone__lixo,
+.lista__compras li #icone__lixo {
+  cursor: pointer;
+}
+
+.lista__item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__produto {
+  display: none;
+}
+
+.lista__item__img {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  cursor: pointer;
+}
+
+.mensagem__erro {
+  display: block;
+  margin: 3px 10px 10px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: red;
 }/*# sourceMappingURL=main.css.map */
