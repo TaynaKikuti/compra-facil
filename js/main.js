@@ -6,13 +6,19 @@ const btnAdicionar = document.querySelector('.btnAdicionar')
 const listaDeProdutos = document.querySelector('.lista__de__compras')
 const listaDeComprados = document.querySelector('.comprados__lista')
 const listaLocalStorage = localStorage.getItem('lista')
+const mensagemErro = document.querySelector('.mensagem__erro')
 
-form.addEventListener('submit', function(evento){
+
+form.addEventListener('submit', function (evento) {
     evento.preventDefault()
+    mensagemErro.innerHTML = ''
     let itens = inputAdicionar.value
     salvarItem()
     inputAdicionar.value = ''
+
 })
+
+
 
 function atualizaLista() {
     localStorage.setItem('lista', JSON.stringify(listaDeItens))
@@ -25,12 +31,14 @@ if(listaLocalStorage) {
     listaDeItens = []
 }
 
+
+
 function salvarItem() {
     const comprasItem = inputAdicionar.value
-    const checarDuplicado = listaDeItens.some((elemento) => elemento.valor.toUpperCase() === comprasItem.toUpperCase()) 
+    const checarDuplicado = (listaDeItens.some((elemento) => elemento.valor.toUpperCase() === comprasItem.toUpperCase())) 
     
     if(checarDuplicado) {
-        alert('Item já existe na lista')
+        mensagemErro.innerHTML = `Item já se encontra na lista`
     } else {
         listaDeItens.push({
             valor: comprasItem,
@@ -101,4 +109,3 @@ function mostrarItem () {
 
     atualizaLista()
 }
-
