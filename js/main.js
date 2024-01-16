@@ -15,6 +15,7 @@ form.addEventListener('submit', function (evento) {
     let itens = inputAdicionar.value
     salvarItem()
     inputAdicionar.value = ''
+    inputAdicionar.focus()
 
 })
 

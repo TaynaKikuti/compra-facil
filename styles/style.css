@@ -120,7 +120,6 @@ html, body {
 .lista__compras {
   background-color: #F3F3F3;
   text-align: center;
-  max-height: 30%;
   margin: 3% 15%;
   padding-bottom: 20px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.273);
@@ -148,6 +147,7 @@ html, body {
 
 .comprados ul {
   text-decoration: line-through;
+  color: #9DBC98;
 }
 
 .lista__item {
